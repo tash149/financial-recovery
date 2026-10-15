@@ -1,4 +1,4 @@
-# Build prompts — v0 website
+# Build prompts — v0 web app (responsive, mobile-first; no native app)
 
 How to use: put `AGENTS.md` in the repo root first. Paste **one prompt at a time** into your coding agent. Don't start the next until the current step's checks pass. Each prompt is short on purpose — the context lives in `AGENTS.md`.
 
@@ -83,7 +83,7 @@ Add an Activity log page listing AuditEvents.
 
 ```
 Build Connect + Discover:
-- Connect screen with 4 cards (parent's phone SMS, parent's email, tax record, camera scan), each with the consent pattern: what we read / ignore / keep / disconnect. Clicking connect loads the seed file (simulated). Registries run automatically after G3.
+- Connect screen with 4 cards in this order: parent's email, tax record, parent's phone SMS (labelled "Needs Android companion · simulated in demo"), camera scan (browser camera via file input). Each card has the consent pattern: what we read / ignore / keep / disconnect. Clicking connect loads the seed file (simulated). Registries run automatically after G3.
 - Source readers: filter step (keep only institution senders/domains; drop OTP messages) → Gemini structured extraction into Signal records (Pydantic schema). Do not persist raw message bodies; store only fields + a short snippet.
 - Camera scan: real Gemini vision extraction on share_certificate.png.
 - Reconciler: match signals to Institution, merge into Assets (same institution + type + last4 = one asset), confidence rules from AGENTS.md.
