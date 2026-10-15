@@ -1,7 +1,7 @@
 # AGENTS.md — project brief (read this before every task)
 
 ## What we're building
-A web app that helps an heir find and claim the financial assets of a parent who has died (India first, NRI heirs a key segment), and helps an insurer/bank verify death claims and catch impostors.
+A **responsive web app** (mobile-first, works on phone and desktop browsers; no native app) that helps an heir find and claim the financial assets of a parent who has died (India first, NRI heirs a key segment), and helps an insurer/bank verify death claims and catch impostors. 
 
 App name placeholder: `{{reclaim}}` (use this string everywhere; it will be replaced later).
 
@@ -31,7 +31,7 @@ Rules: fuzzy, transliteration-aware name matching; mismatches go to manual revie
 ## Demo case (all synthetic)
 - Deceased: **Rajesh Kumar Sharma**, Delhi. Heir: daughter **Ananya Sharma**, Toronto (NRI).
 - Sources and what they reveal:
-  - SMS (parent's Android phone): SBI fixed deposit, HDFC savings account
+  - SMS (parent's Android phone): SBI fixed deposit, HDFC savings account. A web app cannot read SMS; in the real product this comes from a small Android companion app (later). In v0 it is simulated and the card must say "Needs Android companion · simulated in demo".
   - Email: LIC policy premium reminders; CAMS consolidated MF statement
   - Tax record (AIS): FD interest (SBI), savings interest (HDFC), **dividend from a company with no known holding → hidden shares (suggested)**
   - Registries (mock UDGAM/MITRA/IEPF): one old dormant deposit match
@@ -59,7 +59,7 @@ Asset confidence: **High** = 2+ independent sources or an official statement; **
 - Verify agent (institution side): consistency + authenticity checks → `CheckResult`; risk score is computed by code from check results.
 
 ## Design & tone
-Calm, plain language, respectful of grief. No dark patterns, no urgency tricks. Large tap targets, works at 375px width. Every screen says what happens next and what we will never do. English UI; Hindi is a stretch goal.
+Calm, plain language, respectful of grief. No dark patterns, no urgency tricks. Large tap targets, works at 375px width and on desktop (institution console is desktop-first). Use browser features only: camera capture via file input with `capture`, no native APIs. Every screen says what happens next and what we will never do. English UI; Hindi is a stretch goal.
 
 ## How to work in this repo
 - Build in the step order given by the user; finish and verify one step before starting the next.
