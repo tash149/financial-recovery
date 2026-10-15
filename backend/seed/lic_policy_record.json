@@ -1,0 +1,14 @@
+{
+  "_note": "Synthetic demo data. The insurer's own record of the policy, as the LIC claims desk sees it in the console. Not visible to heirs.",
+  "policy": {
+    "policy_no": "112345678",
+    "plan": "New Jeevan Anand (915)",
+    "life_assured": {"name": "RAJESH KUMAR SHARMA", "dob": "1952-03-14", "address": "C-42, Lajpat Nagar II, New Delhi 110024"},
+    "date_of_commencement": "2008-06-28",
+    "sum_assured": 1000000.00,
+    "premium": {"amount": 48250.00, "mode": "yearly", "paid_up_to": "2025-06-28", "next_due": "2026-06-28"},
+    "status": "in force (grace period)",
+    "nominee": {"name": "ANANYA SHARMA", "relationship": "daughter", "dob": "1988-09-21"},
+    "servicing_branch": "Delhi South"
+  }
+}

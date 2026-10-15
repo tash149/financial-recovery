@@ -1,0 +1,27 @@
+{
+  "_note": "Synthetic demo data. Simulates the Annual Information Statement (AIS) from the income-tax portal for the deceased. The PAN is a made-up example value; the app must store it hashed only.",
+  "taxpayer": {
+    "pan": "ABCPS1234D",
+    "name": "RAJESH K SHARMA",
+    "dob": "1952-03-14",
+    "address": "C-42 LAJPAT NAGAR II NEW DELHI 110024"
+  },
+  "statements": [
+    {
+      "financial_year": "2024-25",
+      "rows": [
+        {"row_id": "ais-2425-01", "info_code": "SFT-016(TD)", "info_description": "Interest from deposit", "reported_by": "STATE BANK OF INDIA", "reporter_tan_masked": "DELSXXXX1A", "account_number": "XXXXXXX4821", "transaction_date": "2025-03-31", "amount": 44512.00, "tds": 0.00},
+        {"row_id": "ais-2425-02", "info_code": "SFT-016(SB)", "info_description": "Interest from savings bank", "reported_by": "HDFC BANK LIMITED", "reporter_tan_masked": "MUMHXXXX2B", "account_number": "XXXXXXXXXX0937", "transaction_date": "2025-03-31", "amount": 5980.00, "tds": 0.00},
+        {"row_id": "ais-2425-03", "info_code": "SFT-015", "info_description": "Dividend", "reported_by": "NARMADA POLYMERS LIMITED", "reporter_tan_masked": "AHMNXXXX3C", "account_number": null, "transaction_date": "2024-08-23", "amount": 2800.00, "tds": 0.00}
+      ]
+    },
+    {
+      "financial_year": "2025-26",
+      "rows": [
+        {"row_id": "ais-2526-01", "info_code": "SFT-016(TD)", "info_description": "Interest from deposit", "reported_by": "STATE BANK OF INDIA", "reporter_tan_masked": "DELSXXXX1A", "account_number": "XXXXXXX4821", "transaction_date": "2026-03-31", "amount": 47760.00, "tds": 0.00},
+        {"row_id": "ais-2526-02", "info_code": "SFT-016(SB)", "info_description": "Interest from savings bank", "reported_by": "HDFC BANK LIMITED", "reporter_tan_masked": "MUMHXXXX2B", "account_number": "XXXXXXXXXX0937", "transaction_date": "2026-03-31", "amount": 6120.00, "tds": 0.00},
+        {"row_id": "ais-2526-03", "info_code": "SFT-015", "info_description": "Dividend", "reported_by": "NARMADA POLYMERS LIMITED", "reporter_tan_masked": "AHMNXXXX3C", "account_number": null, "transaction_date": "2025-08-22", "amount": 3150.00, "tds": 0.00}
+      ]
+    }
+  ]
+}

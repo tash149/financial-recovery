@@ -1,0 +1,33 @@
+{
+  "_note": "Synthetic demo data. Simulates an SMS export from Rajesh Kumar Sharma's Android phone (in the real product this comes from an Android companion app). Phone numbers use the reserved 90000 / 555 ranges. Read, extract, forget: bodies must not be stored after extraction.",
+  "device_owner": "RAJESH KUMAR SHARMA",
+  "exported_at": "2026-10-15T09:30:00+05:30",
+  "messages": [
+    {"id": "sms-01", "sender": "VM-HDFCBK", "received_at": "2025-07-02T10:14:00+05:30", "body": "Rs.2,150.00 debited from A/c XX0937 on 02-07-25 to VPA bsesrajdhani@hdfcbank (electricity bill). Avl bal Rs.2,41,880.15. Not you? Call your bank. -HDFC Bank"},
+    {"id": "sms-02", "sender": "JD-SBIINB", "received_at": "2025-07-15T09:02:00+05:30", "body": "Dear Customer, your Term Deposit A/c XXXXXXX4821 for Rs.6,00,000.00 is in force. Rate 7.10% p.a. Maturity value Rs.7,41,045.00 on 15-01-2027. -SBI"},
+    {"id": "sms-03", "sender": "+91 90000 12345", "received_at": "2025-07-20T19:40:00+05:30", "body": "Bhaiya, Diwali pe Delhi aa rahe ho na? Bachche bahut yaad karte hain. -Meena"},
+    {"id": "sms-04", "sender": "AD-HDFCBK", "received_at": "2025-08-03T16:21:00+05:30", "body": "482913 is the OTP for txn of Rs.1,200.00 at SHOPKART on HDFC Bank Card XX5521. Valid for 5 mins. Do not share OTP with anyone."},
+    {"id": "sms-05", "sender": "VM-HDFCBK", "received_at": "2025-08-05T11:08:00+05:30", "body": "Rs.25,000.00 credited to A/c XX0937 on 05-08-25 by UPI from ANANYA SHARMA. Avl bal Rs.2,64,712.40. -HDFC Bank"},
+    {"id": "sms-06", "sender": "VM-SBICRD", "received_at": "2025-08-11T13:30:00+05:30", "body": "Pre-approved SBI Card SimplySAVE waiting for you, Mr Rajesh! Apply in 2 mins: sbicard.example/apply T&C apply"},
+    {"id": "sms-07", "sender": "AX-MEDKRT", "received_at": "2025-08-19T08:45:00+05:30", "body": "Your MediKart order #MK20431 (BP tablets x 2) is out for delivery. Pay Rs.640 on delivery."},
+    {"id": "sms-08", "sender": "+91 90000 23456", "received_at": "2025-09-01T06:12:00+05:30", "body": "Sharma ji, kal subah 6 baje park mein milte hain. Walk ke baad chai. -Verma"},
+    {"id": "sms-09", "sender": "JD-SBIOTP", "received_at": "2025-09-14T21:03:00+05:30", "body": "OTP for login to SBI net banking is 739204. Do not share it with anyone, SBI never asks for OTP. -SBI"},
+    {"id": "sms-10", "sender": "VM-HDFCBK", "received_at": "2025-09-30T23:55:00+05:30", "body": "Interest of Rs.1,530.00 credited to your A/c XX0937 on 30-09-25. -HDFC Bank"},
+    {"id": "sms-11", "sender": "VK-TELCOM", "received_at": "2025-10-04T12:00:00+05:30", "body": "Recharge of Rs.299 successful for your mobile. Validity 28 days. Data 1.5GB/day."},
+    {"id": "sms-12", "sender": "JD-SBIINB", "received_at": "2025-12-31T10:20:00+05:30", "body": "Interest of Rs.11,980.00 accrued on TD A/c XXXXXXX4821 for Q3 FY25-26. TDS: Nil (Form 15H on record). -SBI"},
+    {"id": "sms-13", "sender": "+1 416 555 0142", "received_at": "2026-01-05T07:30:00+05:30", "body": "Papa, landed safely in Toronto. Will call you Sunday. Please take your BP meds on time! - Ananya"},
+    {"id": "sms-14", "sender": "BP-PAYQIK", "received_at": "2026-01-09T18:47:00+05:30", "body": "123456 is your OTP to verify your mobile number on PayQuick. Code expires in 10 minutes."},
+    {"id": "sms-15", "sender": "VM-HDFCBK", "received_at": "2026-01-14T17:02:00+05:30", "body": "Rs.10,000.00 withdrawn from A/c XX0937 at ATM LAJPAT NAGAR on 14-01-26. Avl bal Rs.2,38,102.40. -HDFC Bank"},
+    {"id": "sms-16", "sender": "VM-HDFCBK", "received_at": "2026-01-20T11:00:00+05:30", "body": "Need funds? Get a personal loan up to Rs.10 lakh at attractive rates. Click hdfcbank.example/pl T&C. -HDFC Bank"},
+    {"id": "sms-17", "sender": "AD-BSESRJ", "received_at": "2026-02-05T09:15:00+05:30", "body": "Electricity bill of Rs.2,310 for CA No. 15XXXX88 is due on 20-02-26. Pay via app to avoid late fee."},
+    {"id": "sms-18", "sender": "+91 90000 34567", "received_at": "2026-02-14T20:10:00+05:30", "body": "RWA C-Block: maintenance meeting Sunday 11am at community hall. Tea and samosa arranged."},
+    {"id": "sms-19", "sender": "JD-SBIINB", "received_at": "2026-02-27T12:41:00+05:30", "body": "Dear R K SHARMA, nomination for your TD A/c XXXXXXX4821 is registered in favour of ANANYA S. -SBI"},
+    {"id": "sms-20", "sender": "VM-HDFCBK", "received_at": "2026-03-31T23:58:00+05:30", "body": "Interest of Rs.1,488.00 credited to your A/c XX0937 on 31-03-26. -HDFC Bank"},
+    {"id": "sms-21", "sender": "+91 90000 45678", "received_at": "2026-04-21T09:00:00+05:30", "body": "Reminder from Dr. Kapoor's clinic: follow-up appointment for Mr. Rajesh Sharma on Tue 28 Apr, 10:30am. Please bring your ECG report."},
+    {"id": "sms-22", "sender": "VM-HDFCBK", "received_at": "2026-04-30T21:00:00+05:30", "body": "Available balance in A/c XX0937 as on 30-04-26 is Rs.2,34,518.40. -HDFC Bank"},
+    {"id": "sms-23", "sender": "VM-OTTPLY", "received_at": "2026-05-12T19:00:00+05:30", "body": "Watch the cricket final LIVE tonight on PlayMax. Get 3 months at Rs.99 only!"},
+    {"id": "sms-24", "sender": "+91 90000 12345", "received_at": "2026-06-03T08:05:00+05:30", "body": "Ananya beta, hum sab tumhare saath hain. Kuch bhi chahiye to batana. -Meena bua"},
+    {"id": "sms-25", "sender": "JD-SBIINB", "received_at": "2026-06-30T10:18:00+05:30", "body": "Interest of Rs.12,640.00 accrued on TD A/c XXXXXXX4821 for Q1 FY26-27. TDS: Nil. -SBI"},
+    {"id": "sms-26", "sender": "VM-HDFCBK", "received_at": "2026-06-30T23:57:00+05:30", "body": "Interest of Rs.1,742.00 credited to your A/c XX0937 on 30-06-26. -HDFC Bank"}
+  ]
+}

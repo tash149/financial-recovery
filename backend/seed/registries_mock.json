@@ -1,0 +1,96 @@
+{
+  "_note": "Synthetic demo data. Mock versions of public unclaimed-asset registries. The registry agent may query these only after the case reaches G3. Each registry holds a few records; a search for the deceased should return exactly one true match (UDGAM / PNB). The other records are decoys that share part of the name but differ on DOB, city or father's name.",
+  "registries": [
+    {
+      "id": "udgam",
+      "name": "UDGAM (RBI) - unclaimed bank deposits",
+      "searchable_by": ["name", "dob", "city", "pan_last4"],
+      "records": [
+        {
+          "record_id": "udgam-0001",
+          "holder_name": "RAJESH KUMAR SHARMA",
+          "dob": "1952-03-14",
+          "pan_last4": "234D",
+          "city": "NEW DELHI",
+          "address_hint": "LAJPAT NAGAR",
+          "bank": "PUNJAB NATIONAL BANK",
+          "branch": "Lajpat Nagar, New Delhi",
+          "account_type": "Savings",
+          "account_masked": "XXXXXXXX7702",
+          "amount": 48312.00,
+          "inoperative_since": "2014-03-31",
+          "transferred_to_dea_fund_on": "2024-06-30",
+          "udrn": "UDRN-PNB-DEMO-0007702"
+        },
+        {
+          "record_id": "udgam-0002",
+          "holder_name": "RAJESH SHARMA",
+          "dob": "1966-01-09",
+          "pan_last4": null,
+          "city": "JAIPUR",
+          "address_hint": "MALVIYA NAGAR",
+          "bank": "BANK OF BARODA",
+          "branch": "Malviya Nagar, Jaipur",
+          "account_type": "Current",
+          "account_masked": "XXXXXXXX3310",
+          "amount": 12400.00,
+          "inoperative_since": "2013-09-30",
+          "transferred_to_dea_fund_on": "2023-12-31",
+          "udrn": "UDRN-BOB-DEMO-0003310"
+        }
+      ]
+    },
+    {
+      "id": "mitra",
+      "name": "MITRA (SEBI) - inactive / unclaimed mutual fund folios",
+      "searchable_by": ["name", "pan_last4", "dob"],
+      "records": [
+        {
+          "record_id": "mitra-0001",
+          "holder_name": "RAJESH KUMAR SHARMAN",
+          "dob": "1975-05-02",
+          "pan_last4": "887K",
+          "city": "PUNE",
+          "amc": "Demo Bluechip AMC",
+          "folio_masked": "XXXX4410",
+          "approx_value": 21500.00,
+          "status": "Inactive since 2015"
+        }
+      ]
+    },
+    {
+      "id": "iepf",
+      "name": "IEPF (MCA) - unclaimed dividends and shares transferred to IEPF",
+      "searchable_by": ["name", "father_name", "folio"],
+      "records": [
+        {
+          "record_id": "iepf-0001",
+          "holder_name": "R K SHARMA",
+          "father_name": "HARI PRASAD SHARMA",
+          "city": "KOLKATA",
+          "company": "Eastern Jute Works Limited",
+          "folio_masked": "XXXX0921",
+          "shares": 150,
+          "unclaimed_dividend": 4200.00,
+          "transferred_on": "2021-10-15"
+        }
+      ]
+    },
+    {
+      "id": "bima_bharosa",
+      "name": "Bima Bharosa (IRDAI) - unclaimed insurance amounts",
+      "searchable_by": ["name", "dob", "policy_no_last4"],
+      "records": [
+        {
+          "record_id": "bima-0001",
+          "holder_name": "RAJESHWARI SHARMA",
+          "dob": "1958-12-11",
+          "city": "LUCKNOW",
+          "insurer": "Demo Assurance Co.",
+          "policy_masked": "XXXXX7741",
+          "unclaimed_amount": 65000.00
+        }
+      ]
+    }
+  ]
+}

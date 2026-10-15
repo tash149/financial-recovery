@@ -21,6 +21,7 @@ WORKDIR /app
 COPY backend/requirements.txt backend/requirements.txt
 RUN pip install -r backend/requirements.txt
 COPY backend/app backend/app
+COPY backend/seed backend/seed
 
 COPY --from=frontend /src/.next/standalone frontend/
 COPY --from=frontend /src/.next/static frontend/.next/static

@@ -1,0 +1,95 @@
+{
+  "_note": "Answer key for tests. What discovery should produce for the demo case once all sources are connected (case at G3). Never shown to users or passed to the model. See README.md for the reasoning behind each row.",
+  "value_bands": ["Under ₹1 lakh", "₹1–5 lakh", "₹5–15 lakh", "₹15–50 lakh", "Over ₹50 lakh"],
+  "assets": [
+    {
+      "key": "sbi_fd",
+      "institution_id": "sbi",
+      "asset_type": "fixed_deposit",
+      "last4": "4821",
+      "value_band": "₹5–15 lakh",
+      "confidence": "High",
+      "status_on_discovery": "suggested",
+      "sources": ["sms", "ais"],
+      "evidence": ["sms-02", "sms-12", "sms-19", "sms-25", "ais-2425-01", "ais-2526-01"]
+    },
+    {
+      "key": "hdfc_savings",
+      "institution_id": "hdfc_bank",
+      "asset_type": "savings_account",
+      "last4": "0937",
+      "value_band": "₹1–5 lakh",
+      "confidence": "High",
+      "status_on_discovery": "suggested",
+      "sources": ["sms", "ais"],
+      "evidence": ["sms-01", "sms-05", "sms-10", "sms-15", "sms-20", "sms-22", "sms-26", "ais-2425-02", "ais-2526-02"]
+    },
+    {
+      "key": "lic_policy",
+      "institution_id": "lic",
+      "asset_type": "life_insurance",
+      "last4": "5678",
+      "value_band": "₹5–15 lakh",
+      "confidence": "Medium",
+      "status_on_discovery": "suggested",
+      "sources": ["email"],
+      "evidence": ["em-01", "em-02", "em-16", "em-19"]
+    },
+    {
+      "key": "cams_mf",
+      "institution_id": "cams",
+      "asset_type": "mutual_fund",
+      "last4": "3902",
+      "value_band": "₹1–5 lakh",
+      "confidence": "High",
+      "status_on_discovery": "suggested",
+      "sources": ["email"],
+      "evidence": ["em-12", "em-14"]
+    },
+    {
+      "key": "narmada_shares",
+      "institution_id": "narmada_polymers",
+      "asset_type": "shares",
+      "last4": null,
+      "value_band": "₹1–5 lakh",
+      "confidence": "Suggested",
+      "status_on_discovery": "suggested",
+      "sources": ["ais"],
+      "evidence": ["ais-2425-03", "ais-2526-03"]
+    },
+    {
+      "key": "pnb_dormant",
+      "institution_id": "pnb",
+      "asset_type": "unclaimed_deposit",
+      "last4": "7702",
+      "value_band": "Under ₹1 lakh",
+      "confidence": "Medium",
+      "status_on_discovery": "suggested",
+      "sources": ["registry:udgam"],
+      "evidence": ["udgam-0001"]
+    },
+    {
+      "key": "btm_physical_shares",
+      "institution_id": "bharat_textile",
+      "asset_type": "physical_shares",
+      "last4": "1893",
+      "value_band": "Under ₹1 lakh",
+      "confidence": "Medium",
+      "status_on_discovery": "suggested",
+      "sources": ["scan"],
+      "evidence": ["share_certificate.png"]
+    }
+  ],
+  "must_not_become_assets": [
+    {"what": "HDFC Bank card XX5521", "where": "sms-04", "why": "only appears inside an OTP message, which is dropped before extraction"},
+    {"what": "SBI Card offer", "where": "sms-06", "why": "SBICRD is SBI Card, not SBI; promotional, no account"},
+    {"what": "HDFC personal loan offer", "where": "sms-16", "why": "promotional message from a known sender, no account"},
+    {"what": "LIC bonus refund", "where": "em-06", "why": "phishing: domain licindia-bonus-refund.example is not an LIC domain"},
+    {"what": "SBI FD mention in personal mail", "where": "em-09", "why": "personal mail is not read; the FD is found from SMS + AIS anyway"},
+    {"what": "UDGAM Bank of Baroda record", "where": "udgam-0002", "why": "different person: RAJESH SHARMA, Jaipur, DOB 1966"},
+    {"what": "MITRA folio", "where": "mitra-0001", "why": "different person: name differs, DOB 1975, Pune"},
+    {"what": "IEPF Eastern Jute Works", "where": "iepf-0001", "why": "different person: father's name HARI PRASAD SHARMA, Kolkata"},
+    {"what": "Bima Bharosa record", "where": "bima-0001", "why": "different person: RAJESHWARI SHARMA, Lucknow"}
+  ],
+  "otp_message_ids": ["sms-04", "sms-09", "sms-14"]
+}

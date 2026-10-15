@@ -1,0 +1,95 @@
+{
+  "_note": "Synthetic demo data. Simulates what a DigiLocker consent would return. No real person, document or number.",
+  "accounts": {
+    "ananya": {
+      "holder_name": "ANANYA SHARMA",
+      "mobile_masked": "+91 XXXXX X0142",
+      "consent_scopes": ["identity", "passport"],
+      "issued_documents": [
+        {
+          "doc_id": "dl-ananya-ekyc",
+          "doc_type": "aadhaar_ekyc",
+          "issuer": "UIDAI (simulated)",
+          "fields": {
+            "name": "ANANYA SHARMA",
+            "dob": "1988-09-21",
+            "gender": "F",
+            "aadhaar_masked": "XXXX XXXX 6203",
+            "address": "C-42, Lajpat Nagar II, New Delhi 110024",
+            "photo": "synthetic-placeholder"
+          },
+          "fetched_at": "2026-10-15T09:00:00+05:30"
+        },
+        {
+          "doc_id": "dl-ananya-passport",
+          "doc_type": "passport",
+          "issuer": "Passport Seva / Consulate General of India, Toronto (simulated)",
+          "fields": {
+            "surname": "SHARMA",
+            "given_names": "ANANYA",
+            "passport_no": "Z9900123",
+            "nationality": "INDIAN",
+            "dob": "1988-09-21",
+            "place_of_birth": "NEW DELHI",
+            "date_of_issue": "2021-02-11",
+            "date_of_expiry": "2031-02-10",
+            "place_of_issue": "TORONTO",
+            "father_or_legal_guardian": "RAJESH KUMAR SHARMA",
+            "mother": "SUNITA SHARMA",
+            "spouse": "",
+            "address": "C-42, LAJPAT NAGAR II, NEW DELHI 110024",
+            "file_no": "TOR0000DEMO21"
+          },
+          "fetched_at": "2026-10-15T09:00:00+05:30"
+        }
+      ]
+    }
+  },
+  "death_registry": {
+    "_note": "Simulated civil-registration lookup. The app searches by deceased name + DOB (+ date of death). The second record is a decoy with a similar name and a different DOB.",
+    "records": [
+      {
+        "doc_id": "dl-death-rks",
+        "doc_type": "death_certificate",
+        "issuer": "Registrar of Births & Deaths, Delhi (demo registry)",
+        "image": "death_certificate.png",
+        "fields": {
+          "registration_no": "DEMO-DL-2026-061472",
+          "date_of_registration": "2026-06-04",
+          "name_of_deceased": "RAJESH KUMAR SHARMA",
+          "sex": "Male",
+          "dob": "1952-03-14",
+          "age_at_death": "74 years",
+          "date_of_death": "2026-06-02",
+          "place_of_death": "Hospital, Saket, New Delhi",
+          "father_name": "OM PRAKASH SHARMA",
+          "spouse_name": "SUNITA SHARMA (late)",
+          "address_at_death": "C-42, Lajpat Nagar II, New Delhi 110024",
+          "permanent_address": "C-42, Lajpat Nagar II, New Delhi 110024",
+          "date_of_issue": "2026-06-10"
+        }
+      },
+      {
+        "doc_id": "dl-death-decoy-rs",
+        "doc_type": "death_certificate",
+        "issuer": "Registrar of Births & Deaths, Delhi (demo registry)",
+        "image": null,
+        "fields": {
+          "registration_no": "DEMO-DL-2026-031188",
+          "date_of_registration": "2026-03-09",
+          "name_of_deceased": "RAJESH SHARMA",
+          "sex": "Male",
+          "dob": "1961-07-30",
+          "age_at_death": "64 years",
+          "date_of_death": "2026-03-07",
+          "place_of_death": "Residence, Rohini, Delhi",
+          "father_name": "KISHAN LAL SHARMA",
+          "spouse_name": "KAMLA SHARMA",
+          "address_at_death": "Sector 9, Rohini, Delhi 110085",
+          "permanent_address": "Sector 9, Rohini, Delhi 110085",
+          "date_of_issue": "2026-03-12"
+        }
+      }
+    ]
+  }
+}

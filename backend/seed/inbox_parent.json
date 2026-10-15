@@ -1,0 +1,187 @@
+{
+  "_note": "Synthetic demo data. Simulates Rajesh Kumar Sharma's mailbox after the heir connects it. Fictional brands use the reserved .example domain. Read, extract, forget: bodies and attachment text must not be stored after extraction.",
+  "mailbox": "rk.sharma1952@mail.example",
+  "exported_at": "2026-10-15T09:35:00+05:30",
+  "emails": [
+    {
+      "id": "em-01",
+      "from_name": "LIC of India",
+      "from_address": "no-reply@licindia.in",
+      "date": "2025-06-01T08:00:00+05:30",
+      "subject": "Premium due reminder - Policy No. 112345678",
+      "body": "Dear Policyholder RAJESH KUMAR SHARMA,\n\nThis is a reminder that the yearly premium of Rs. 48,250.00 for your policy No. 112345678 (New Jeevan Anand, Sum Assured Rs. 10,00,000) is due on 28-06-2025.\n\nYou can pay online or at any LIC branch. Please ignore if already paid.\n\nLife Insurance Corporation of India",
+      "attachments": []
+    },
+    {
+      "id": "em-02",
+      "from_name": "LIC of India",
+      "from_address": "no-reply@licindia.in",
+      "date": "2025-06-27T14:20:00+05:30",
+      "subject": "Premium received - Policy No. 112345678",
+      "body": "Dear RAJESH KUMAR SHARMA,\n\nWe have received Rs. 48,250.00 towards policy No. 112345678 for the due date 28-06-2025. Next premium due: 28-06-2026.\n\nThank you for being with LIC.",
+      "attachments": [{"filename": "premium_receipt_112345678.pdf", "extracted_text": "PREMIUM RECEIPT. Policy No: 112345678. Plan: New Jeevan Anand (915). Life Assured: RAJESH KUMAR SHARMA. Amount: Rs 48,250.00. Mode: Yearly. Paid on: 26-06-2025. Next due: 28-06-2026. Branch: Delhi South."}]
+    },
+    {
+      "id": "em-03",
+      "from_name": "MarketMorning",
+      "from_address": "newsletter@marketmorning.example",
+      "date": "2025-07-08T06:30:00+05:30",
+      "subject": "Sensex at record high: 5 things to know today",
+      "body": "Good morning! Markets opened strong today. Here are five stories to watch... Unsubscribe anytime.",
+      "attachments": []
+    },
+    {
+      "id": "em-04",
+      "from_name": "Suresh Verma",
+      "from_address": "suresh.verma@mail.example",
+      "date": "2025-07-22T18:05:00+05:30",
+      "subject": "Reunion of the 1974 batch",
+      "body": "Rajesh bhai, we are planning a reunion in November at the old college. Do come. Bring photos if you have any. - Suresh",
+      "attachments": []
+    },
+    {
+      "id": "em-05",
+      "from_name": "SkyFly Airlines",
+      "from_address": "tickets@skyfly.example",
+      "date": "2025-09-02T11:40:00+05:30",
+      "subject": "Your e-ticket: Delhi to Toronto, 20 Sep 2025",
+      "body": "Booking reference SKY7Q2. Passenger: MR RAJESH KUMAR SHARMA. DEL-YYZ, 20 Sep 2025, 02:15. Have a pleasant journey.",
+      "attachments": []
+    },
+    {
+      "id": "em-06",
+      "from_name": "LIC Bonus Refund Desk",
+      "from_address": "refunds@licindia-bonus-refund.example",
+      "date": "2025-10-03T10:10:00+05:30",
+      "subject": "URGENT: Claim your LIC bonus refund of Rs 18,400 today",
+      "body": "Dear customer, your LIC bonus of Rs 18,400 is pending. Click the link and enter your bank details and OTP within 24 hours to claim. Policy holders who do not respond will lose the bonus.",
+      "attachments": []
+    },
+    {
+      "id": "em-07",
+      "from_name": "Delhi Daily Digest",
+      "from_address": "digest@delhidaily.example",
+      "date": "2025-10-19T07:00:00+05:30",
+      "subject": "Weekend: Diwali melas across the city",
+      "body": "This weekend's guide to Diwali melas, traffic advisories and the weather outlook.",
+      "attachments": []
+    },
+    {
+      "id": "em-08",
+      "from_name": "HDFC Bank",
+      "from_address": "news@hdfcbank.net",
+      "date": "2025-11-12T09:00:00+05:30",
+      "subject": "5 tips to stay safe from banking fraud",
+      "body": "Dear Customer, never share your OTP, PIN or password with anyone. HDFC Bank will never ask for these by phone, SMS or email. Stay safe.",
+      "attachments": []
+    },
+    {
+      "id": "em-09",
+      "from_name": "Ananya Sharma",
+      "from_address": "ananya.sharma@mail.example",
+      "date": "2025-12-28T21:15:00+05:30",
+      "subject": "Did you renew the FD?",
+      "body": "Papa, did the SBI FD get renewed? Also please don't forget the LIC premium in June. Sending photos from the trip separately. Love, Ananya",
+      "attachments": []
+    },
+    {
+      "id": "em-10",
+      "from_name": "ShopKart",
+      "from_address": "orders@shopkart.example",
+      "date": "2026-01-10T15:22:00+05:30",
+      "subject": "Your order has shipped: Reading glasses",
+      "body": "Your order SK-88213 has shipped and will arrive by 13 Jan.",
+      "attachments": []
+    },
+    {
+      "id": "em-11",
+      "from_name": "C-Block RWA",
+      "from_address": "rwa.cblock@mail.example",
+      "date": "2026-02-01T10:00:00+05:30",
+      "subject": "February newsletter: water tank cleaning schedule",
+      "body": "Dear residents, tank cleaning will happen on 8 Feb. Water supply will be off 10am to 2pm.",
+      "attachments": []
+    },
+    {
+      "id": "em-12",
+      "from_name": "CAMS",
+      "from_address": "donotreply@camsonline.com",
+      "date": "2026-04-10T19:30:00+05:30",
+      "subject": "SIP processed - Folio 10433902",
+      "body": "Dear RAJESH KUMAR SHARMA, your SIP of Rs. 5,000.00 in Kotak Flexicap Fund - Growth under Folio 10433902 has been processed at NAV Rs. 78.12 on 10-04-2026. Units allotted: 64.004.",
+      "attachments": []
+    },
+    {
+      "id": "em-13",
+      "from_name": "MediKart",
+      "from_address": "care@medikart.example",
+      "date": "2026-04-16T08:10:00+05:30",
+      "subject": "Your prescription refill is ready",
+      "body": "Your monthly refill (BP and cholesterol tablets) is ready for delivery.",
+      "attachments": []
+    },
+    {
+      "id": "em-14",
+      "from_name": "CAMS",
+      "from_address": "donotreply@camsonline.com",
+      "date": "2026-05-10T07:45:00+05:30",
+      "subject": "Consolidated Account Statement for April 2026",
+      "body": "Dear Investor, please find attached your Consolidated Account Statement (CAS) for the period 01-Apr-2026 to 30-Apr-2026. The attachment is password protected with your PAN and date of birth.",
+      "attachments": [{"filename": "CAS_APR2026_XXXXX1234X.pdf", "extracted_text": "CONSOLIDATED ACCOUNT STATEMENT. Period: 01-Apr-2026 to 30-Apr-2026. Investor: RAJESH KUMAR SHARMA. PAN: XXXXX1234X. Folio No: 10433902. AMC: Kotak Mahindra Mutual Fund. Scheme 1: Kotak Flexicap Fund - Growth. Units: 2,140.512. NAV (30-Apr-2026): 78.12. Market value: Rs 1,67,217. Scheme 2: Kotak Equity Hybrid Fund - Growth. Units: 3,905.220. NAV: 54.60. Market value: Rs 2,13,225. Total market value: Rs 3,80,442. Nominee: Registered (1). Registrar: CAMS."}]
+    },
+    {
+      "id": "em-15",
+      "from_name": "Mail Service",
+      "from_address": "security@mail.example",
+      "date": "2026-05-14T22:30:00+05:30",
+      "subject": "New sign-in to your account",
+      "body": "We noticed a new sign-in to your account from a Chrome browser on Android. If this was you, no action is needed.",
+      "attachments": []
+    },
+    {
+      "id": "em-16",
+      "from_name": "LIC of India",
+      "from_address": "no-reply@licindia.in",
+      "date": "2026-05-29T08:00:00+05:30",
+      "subject": "Premium due reminder - Policy No. 112345678",
+      "body": "Dear Policyholder RAJESH KUMAR SHARMA,\n\nThis is a reminder that the yearly premium of Rs. 48,250.00 for your policy No. 112345678 is due on 28-06-2026.\n\nLife Insurance Corporation of India",
+      "attachments": []
+    },
+    {
+      "id": "em-17",
+      "from_name": "Silver Steps Yoga Club",
+      "from_address": "hello@silversteps.example",
+      "date": "2026-06-08T07:00:00+05:30",
+      "subject": "We miss you at morning yoga",
+      "body": "Namaste! We haven't seen you at the park this week. Hope all is well.",
+      "attachments": []
+    },
+    {
+      "id": "em-18",
+      "from_name": "MarketMorning",
+      "from_address": "newsletter@marketmorning.example",
+      "date": "2026-06-22T06:30:00+05:30",
+      "subject": "Dividend season: who is paying the most this year",
+      "body": "A roundup of this year's dividend announcements from large and mid-size companies. Unsubscribe anytime.",
+      "attachments": []
+    },
+    {
+      "id": "em-19",
+      "from_name": "LIC of India",
+      "from_address": "no-reply@licindia.in",
+      "date": "2026-07-15T08:00:00+05:30",
+      "subject": "Grace period ending - Policy No. 112345678",
+      "body": "Dear Policyholder RAJESH KUMAR SHARMA,\n\nThe premium of Rs. 48,250.00 due on 28-06-2026 for policy No. 112345678 has not been received. The grace period ends on 28-07-2026. If the life assured has passed away, the nominee may contact the servicing branch to file a claim.\n\nLife Insurance Corporation of India",
+      "attachments": []
+    },
+    {
+      "id": "em-20",
+      "from_name": "Suresh Verma",
+      "from_address": "suresh.verma@mail.example",
+      "date": "2026-07-28T17:45:00+05:30",
+      "subject": "Remembering Rajesh",
+      "body": "Ananya, I am writing to your father's email because I don't have yours. We are all very sorry. He was the heart of our batch. Please call me if you need anything. - Suresh uncle",
+      "attachments": []
+    }
+  ]
+}
