@@ -1,0 +1,46 @@
+# Build the single-container image and deploy it to Cloud Run.
+# Run with: gcloud builds submit --config cloudbuild.yaml
+# One-time setup is in README.md (Artifact Registry repo + gemini-api-key secret).
+substitutions:
+  _REGION: asia-south1
+  _SERVICE: heir-app
+  _AR_REPO: heir-app
+  _GEMINI_SECRET: gemini-api-key
+
+steps:
+  - id: build
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$BUILD_ID
+      - .
+
+  - id: push
+    name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$BUILD_ID
+
+  - id: deploy
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - ${_SERVICE}
+      - --image=${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$BUILD_ID
+      - --region=${_REGION}
+      - --platform=managed
+      - --port=8080
+      - --allow-unauthenticated
+      # SQLite lives inside the container, so keep a single instance for v0.
+      - --max-instances=1
+      # Injected as an env var at runtime from Secret Manager; never part of the image.
+      - --set-secrets=GEMINI_API_KEY=${_GEMINI_SECRET}:latest
+
+images:
+  - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$BUILD_ID
+
+options:
+  logging: CLOUD_LOGGING_ONLY
