@@ -1,0 +1,79 @@
+{
+  "_note": "Synthetic demo data. Institution names are used only as reference labels; no account, policy or holding here is real.",
+  "institutions": [
+    {
+      "id": "sbi",
+      "canonical_name": "State Bank of India",
+      "kind": "bank",
+      "aliases": ["SBI", "State Bank", "St Bank of India", "STATE BANK OF INDIA", "SBI Bank"],
+      "sms_sender_ids": ["SBIINB", "SBIBNK", "SBIPSG", "ATMSBI", "SBIOTP"],
+      "email_domains": ["sbi.co.in", "alerts.sbi.co.in", "onlinesbi.sbi"],
+      "not_to_be_confused_with": ["SBI Card (SBICRD) is a separate credit-card company", "SBI Mutual Fund is an AMC"],
+      "form_templates": ["bank_deceased_claim", "indemnity_letter"]
+    },
+    {
+      "id": "hdfc_bank",
+      "canonical_name": "HDFC Bank",
+      "kind": "bank",
+      "aliases": ["HDFC Bank Ltd", "HDFC BANK", "HDFC", "Housing Development Finance Corp Bank"],
+      "sms_sender_ids": ["HDFCBK", "HDFCBN"],
+      "email_domains": ["hdfcbank.com", "hdfcbank.net"],
+      "not_to_be_confused_with": ["HDFC Mutual Fund is an AMC", "HDFC Life is an insurer"],
+      "form_templates": ["bank_deceased_claim", "indemnity_letter"]
+    },
+    {
+      "id": "lic",
+      "canonical_name": "Life Insurance Corporation of India",
+      "kind": "insurer",
+      "aliases": ["LIC", "LIC of India", "Life Insurance Corp", "LICI"],
+      "sms_sender_ids": ["LICIND", "LICIOD"],
+      "email_domains": ["licindia.in", "licindia.com"],
+      "not_to_be_confused_with": ["LIC Housing Finance (LICHFL) is a lender, not the insurer"],
+      "form_templates": ["insurer_death_claim", "indemnity_letter"]
+    },
+    {
+      "id": "cams",
+      "canonical_name": "Computer Age Management Services (CAMS)",
+      "kind": "mf_registrar",
+      "aliases": ["CAMS", "CAMS Online", "Computer Age Management Services Ltd", "CAMS RTA"],
+      "sms_sender_ids": ["CAMSPL", "CAMSMF"],
+      "email_domains": ["camsonline.com", "camsonline.in"],
+      "not_to_be_confused_with": [],
+      "form_templates": ["mf_transmission_request", "indemnity_letter"]
+    },
+    {
+      "id": "narmada_polymers",
+      "canonical_name": "Narmada Polymers Limited",
+      "kind": "listed_company",
+      "aliases": ["NARMADA POLYMERS LTD", "Narmada Polymers Ltd.", "NPL", "Narmada Poly"],
+      "sms_sender_ids": [],
+      "email_domains": ["narmadapolymers.example"],
+      "registrar": "Link Intime India (RTA)",
+      "public_reference": {"dividend_per_share": {"2024-25": 4.00, "2025-26": 4.50}, "approx_share_price": 412.00},
+      "not_to_be_confused_with": [],
+      "form_templates": ["share_transmission_request", "iepf5_cover", "indemnity_letter"]
+    },
+    {
+      "id": "pnb",
+      "canonical_name": "Punjab National Bank",
+      "kind": "bank",
+      "aliases": ["PNB", "Punjab Natl Bank", "PUNJAB NATIONAL BANK"],
+      "sms_sender_ids": ["PNBSMS", "PNBBNK"],
+      "email_domains": ["pnb.co.in", "pnb.bank.in"],
+      "not_to_be_confused_with": ["PNB Housing Finance is a separate lender"],
+      "form_templates": ["bank_deceased_claim", "indemnity_letter"]
+    },
+    {
+      "id": "bharat_textile",
+      "canonical_name": "Bharat Textile Mills Limited",
+      "kind": "listed_company",
+      "aliases": ["BHARAT TEXTILE MILLS LTD", "Bharat Textile Mills Ltd.", "BTM", "Bharat Textiles"],
+      "sms_sender_ids": [],
+      "email_domains": [],
+      "registrar": "MCS Share Transfer Agent (RTA)",
+      "public_reference": {"approx_share_price": 186.00},
+      "not_to_be_confused_with": [],
+      "form_templates": ["share_transmission_request", "iepf5_cover", "indemnity_letter"]
+    }
+  ]
+}

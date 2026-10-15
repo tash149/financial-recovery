@@ -1,0 +1,31 @@
+{
+  "_note": "Synthetic demo data. A fraudulent death claim on the LIC policy, filed by a fictional 'nephew'. Used by the insurer console (Verify). Every planted inconsistency is listed in README.md.",
+  "claim": {
+    "claim_ref": "LIC-DC-DEMO-2026-0457",
+    "institution_id": "lic",
+    "policy_no": "112345678",
+    "filed_at": "2026-07-21T11:32:00+05:30",
+    "channel": "branch walk-in, Ghaziabad",
+    "claimant": {
+      "name": "VIKRAM SHARMA",
+      "dob": "1979-11-03",
+      "relationship_to_deceased": "nephew",
+      "id_document": {"type": "aadhaar_ekyc", "aadhaar_masked": "XXXX XXXX 5519", "name": "VIKRAM SHARMA"},
+      "address": "B-17, Raj Nagar Extension, Ghaziabad, Uttar Pradesh 201017",
+      "mobile": "+91 90000 56789"
+    },
+    "deceased_as_stated": {
+      "name": "RAJESH KUMAR SHARMA",
+      "dob": "1952-03-14",
+      "date_of_death": "2026-05-18",
+      "place_of_death": "Residence, New Delhi"
+    },
+    "payout_account": {"bank": "Demo Co-operative Bank", "account_masked": "XXXXXXXX9921", "holder": "VIKRAM SHARMA"},
+    "statement": "My uncle passed away on 18 May 2026. His daughter lives abroad and cannot be reached, so I am filing the claim as his closest relative in India.",
+    "attachments": [
+      {"doc_type": "death_certificate", "file": "impostor_death_certificate.png"},
+      {"doc_type": "claimant_id", "file": null, "note": "Aadhaar e-KYC of claimant (simulated)"}
+    ],
+    "not_attached": ["nominee's consent / NOC", "legal heir certificate or succession certificate", "original policy bond", "claimant's relationship proof"]
+  }
+}

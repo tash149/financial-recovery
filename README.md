@@ -7,6 +7,7 @@ Helps an heir find and claim the financial assets of a parent who has died, and 
 | Path | What |
 |---|---|
 | `backend/` | FastAPI + SQLModel (SQLite), pytest. Python 3.11. |
+| `backend/seed/` | Synthetic demo data + answer key ([README](backend/seed/README.md)). `POST /admin/reset` reloads it. |
 | `frontend/` | Next.js (App Router, TypeScript, Tailwind). Node 22. |
 | `Dockerfile`, `start.sh` | One container for Cloud Run (frontend + backend). |
 | `cloudbuild.yaml` | Build and deploy to Cloud Run (`heir-app`, `asia-south1`). |
